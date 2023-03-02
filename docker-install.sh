@@ -58,11 +58,11 @@ echo '{
     "graph": "$drpath",
     "storage-driver": "overlay"
 }' > /etc/docker/daemon.json
-mv /var/lib/docker/* /media/raid1/Docker/
+mv /var/lib/docker/* $drpath
 sudo systemctl daemon-reload
 sudo systemctl start docker
 docker info | grep "Root Dir"
-#read -p "Weiter mit Enter..."
+read -p "Press Enter..."
 echo ""
 }
 
