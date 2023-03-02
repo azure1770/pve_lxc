@@ -88,6 +88,7 @@ echo ""
 
 
 f_show_usage() {
+clear
 printf "******************\n"
 printf "* Docker - Setup *\n"
 printf "******************\n"
@@ -129,6 +130,7 @@ echo ""
 
 install() {
 f_banner_post
+apt-get install sudo -y
 f_add_group_docker
 f_uninst_old_v
 f_setup_repo
