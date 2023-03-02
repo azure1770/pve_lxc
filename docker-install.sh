@@ -1,5 +1,4 @@
 #!/bin/bash
-source /media/setup/FILES/SIS/installer/variablen
 
 f_add_group_docker() {
 echo -e $LGREEN"Docker"$RALL
